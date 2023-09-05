@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-name = "Holberton"
-school = "School"
-answer = name + ' ' + school
+str1 = "Holberton"
+str2 = "School"
+answer = str1 + ' ' + str2
 print(f"Welcome to {answer}")
