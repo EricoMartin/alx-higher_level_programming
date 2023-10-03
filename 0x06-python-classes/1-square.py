@@ -5,7 +5,7 @@
 class Square:
     """This class defines a sqaure instance"""
 
-    def __init__(self, size):
+    def __init__(self, size=None):
         """This method instantiates the sqaure object"""
 
-        self._size = size
+        self.__size = size
