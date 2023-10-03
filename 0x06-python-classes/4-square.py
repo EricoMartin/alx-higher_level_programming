@@ -6,9 +6,13 @@ class Square:
     """This class defines a sqaure instance"""
 
     def __init__(self, size=0) -> None:
-        """This method instantiates the sqaure object"""
+        """This method instantiates the sqaure object
 
-        self.size = size
+        Args:
+            size (int): Size of the sqaure
+        """
+
+        self.__size = size
 
     @property
     def size(self):
@@ -40,7 +44,7 @@ class Square:
 
     def area(self):
         """This describes an Area of a square
-        
+
         Returns:
             int: The area of a square instance.
         """
