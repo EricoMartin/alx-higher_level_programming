@@ -19,3 +19,6 @@ Now use it:
 
     >>> add_integer(150, 50)
     200
+
+    >>> add_integer(150, "50")
+    b must be an integer
