@@ -18,7 +18,7 @@ def add_integer(a, b=98):
 
     if not var_a:
         raise TypeError("a must be an integer")
-    elif type(b) is not int and type(b) is not float:
+    elif not var_b:
         raise TypeError("b must be an integer")
     else:
         return int(a) + int(b)
