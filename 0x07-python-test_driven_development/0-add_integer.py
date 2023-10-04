@@ -3,7 +3,7 @@
 
 
 def add_integer(a, b=98):
-    """ This is the add_integer function Declaration  
+    """ This is the add_integer function Declaration
 
         Args:
             a: a number or float
