@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" This the module Declarartion"""
+""" 0-add_integer Module """
 
 
 def add_integer(a, b=98):
