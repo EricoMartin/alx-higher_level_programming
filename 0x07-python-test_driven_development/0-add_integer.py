@@ -10,8 +10,8 @@ def add_integer(a, b=98):
 
     if var_a and var_b:
         if isinstance(b, float) or isinstance(a, float):
-            int(a)
-            int(b)
+            a = int(a)
+            b = int(b)
         return a + b
     elif not var_a:
         raise TypeError("a must be an integer")
