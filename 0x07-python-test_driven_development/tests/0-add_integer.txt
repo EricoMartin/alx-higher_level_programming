@@ -1,0 +1,21 @@
+The ``main`` module
+======================
+
+Using ``add_integer``
+-------------------
+
+This is a function that adds two numbers that must either be an integer or a float.
+
+Now use it:
+
+    >>> add_integer(8, 6)
+    14
+
+    >>> add_integer(8.0, 6.0)
+    14
+
+    >>> add_integer(10.5, 14.5)
+    25
+
+    >>> add_integer(150, 50)
+    200
