@@ -14,12 +14,9 @@ def add_integer(a, b=98):
             integer addition
     """
 
-    var_a = isinstance(a, int) or isinstance(a, float)
-    var_b = isinstance(b, int) or isinstance(b, float)
-
-    if not var_a:
+    if type(a) is not int and type(a) is not float:
         raise TypeError("a must be an integer")
-    elif not var_b:
+    elif type(b) is not int and type(b) is not float:
         raise TypeError("b must be an integer")
     else:
         return int(a) + int(b)
