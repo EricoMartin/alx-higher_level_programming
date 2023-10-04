@@ -6,6 +6,24 @@ Using ``add_integer``
 
 This is a function that adds two numbers that must either be an integer or a float.
 
+
+Importing the ``add_integer()`` function
+=========================================
+        >>> add_integer = __import__("0-add_integer").add_integer
+
+checking for module docstring
+::
+        >>> mod_string = __import__("0-add_integer").__doc__
+        >>> len(mod_string) > 3
+        True
+
+checking for function docstring
+::
+        >>> fun_docs = add_integer.__doc__
+        >>> len(fun_docs) > 5
+        True
+
+
 Now use it:
 
     >>> add_integer(8, 6)
@@ -21,4 +39,4 @@ Now use it:
     200
 
     >>> add_integer(150, "50")
-    b must be an integer
+    248
