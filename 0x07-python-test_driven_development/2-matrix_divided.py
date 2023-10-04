@@ -14,7 +14,8 @@ def matrix_divided(matrix, div):
             a new matrix
     """
     length = 0
-    err_msg = "matrix must be a matrix (list of lists) of integers/float"
+    err_msg = "matrix must be a matrix (list of lists) of integers/floats"
+
     if type(matrix) is not list:
         raise TypeError(err_msg)
 
