@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-    This is the Rectangle module Declaration
+    This defines an empty Rectangle module Declaration
 """
 
 
