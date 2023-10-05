@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-    """Rectangle module Decleration"""
+"""Rectangle module Decleration"""
 
 
-    class Rectangle:
-        """
-            A Rectangle class
+class Rectangle:
+    """
+        A Rectangle class
 
-            Args:
-                None
+        Args:
+            None
 
-            Returns:
-                None
+        Returns:
+            None
 
-        """        
-        def __init__(self):
-            
+    """
+    def __init__(self):
