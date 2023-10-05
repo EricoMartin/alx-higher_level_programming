@@ -1,7 +1,6 @@
 #!/usr/bin/python3
 """
     This is the Rectangle module Declaration
-
 """
 
 
