@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-    """ 
-    Rectangle module Declaration 
+"""
+    This is the Rectangle module Declaration
 
-    """
+"""
 
 
 class Rectangle:
