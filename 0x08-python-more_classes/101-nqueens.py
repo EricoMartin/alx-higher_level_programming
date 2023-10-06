@@ -26,7 +26,7 @@ if __name__ == "__main__":
 
     def already_exists(y):
         """check that a queen does not already exist in that y value"""
-  
+
         for x in range(n):
             if y == a[x][1]:
                 return True
@@ -38,7 +38,7 @@ if __name__ == "__main__":
         if (already_exists(y)):
             return False
         i = 0
-        while(i < x):
+        while (i < x):
             if abs(a[i][1] - y) == abs(i - x):
                 return False
             i += 1
