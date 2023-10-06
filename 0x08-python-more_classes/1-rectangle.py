@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Define an empty class Rectangle
+Define a class Rectangle
 """
 
 
@@ -18,7 +18,7 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """ The initialization method """
-        
+
         self.__width = width
         self.__height = height
 
