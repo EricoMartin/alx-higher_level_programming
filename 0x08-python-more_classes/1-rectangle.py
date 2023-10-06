@@ -5,17 +5,8 @@ Define a class Rectangle
 
 
 class Rectangle:
-    """
-        A Rectangle class
+    """A Rectangle class"""
 
-        Args:
-            width: An integer
-            height: Another integer
-
-        Returns:
-            None
-
-    """
     def __init__(self, width=0, height=0):
         """ The initialization method """
 
