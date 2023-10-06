@@ -18,10 +18,10 @@ class Rectangle:
     """
     def __init__(self, width=0, height=0):
         """ The initialization method """
+        
+        self.__width = width
+        self.__height = height
 
-            self.__width = width
-            self.__height = height
- 
     @property
     def width(self):
         """ width getter property """
@@ -54,4 +54,4 @@ class Rectangle:
         elif height < 0:
             raise ValueError("height must be >= 0")
         else:
-            raise TypeError("height must be an integer"
+            raise TypeError("height must be an integer")
