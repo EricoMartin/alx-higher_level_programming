@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-"""This is the 101-locked_class Module
+"""
+This is the 101-locked_class Module
 
-    This module optimizes memory by creating obj based on 
-    certain criteria.
+This module optimizes memory by creating obj based on 
+certain criteria.
 """
 
 
