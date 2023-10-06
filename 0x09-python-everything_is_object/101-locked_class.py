@@ -9,4 +9,4 @@ certain criteria.
 
 class LockedClass:
     """ LockedClass Declaration """
-    __slots__ = (first_name)
+    __slots__ = ('first_name')
