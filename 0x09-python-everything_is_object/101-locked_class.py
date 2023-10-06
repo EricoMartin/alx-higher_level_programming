@@ -1,6 +1,8 @@
 #!/usr/bin/python3
-"""
-    This the LockedClass Module
+"""This the LockedClass Module
+
+    This module optimizes memory by creating obj based on 
+    certain criteria.
 """
 
 
