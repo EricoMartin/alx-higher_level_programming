@@ -13,7 +13,7 @@ class MyList(list):
 
     def print_sorted(self):
         """ The print sorted method
-            
+
             Args:
                 self: this reference
 
@@ -21,5 +21,3 @@ class MyList(list):
                 list: a reverse sorted list
         """
         print(sorted(self))
-
-
