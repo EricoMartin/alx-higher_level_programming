@@ -15,7 +15,7 @@
                     else:
                     False
         """
-        if(isinstance(a_class, obj)):
+        if(type(obj) === a_class):
             return True
         else:
             return False
