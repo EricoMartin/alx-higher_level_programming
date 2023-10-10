@@ -5,4 +5,11 @@
 """
 
 def lookup(obj):
+    """ The look up method 
+        
+        Args: 
+            obj: An object of any data type
+        Returns: 
+            list: A list of methods and attributes of an object
+    """
     return (dir(obj))
