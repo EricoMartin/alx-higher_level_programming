@@ -3,7 +3,7 @@
 
 
 def is_kind_of_class(obj, a_class):
-    """ is_kind_of_class: method that checks 
+    """ is_kind_of_class: method that checks
         if the object is an instance of a class
         that derives from the specified class
 
@@ -12,10 +12,10 @@ def is_kind_of_class(obj, a_class):
             a_class: The specified class
 
         Returns:
-            True if it is an instance 
+            True if it is an instance
             else False
     """
-    if isinstance(a_class, obj):
+    if isinstance(obj, a_class):
         return True
     else:
         return False
