@@ -11,5 +11,7 @@ def read_file(filename=""):
         Returns:
             None
     """
+
     with open(filename, "r") as f:
-        f.readlines()
+        for line in f:
+            print(line, end="")
