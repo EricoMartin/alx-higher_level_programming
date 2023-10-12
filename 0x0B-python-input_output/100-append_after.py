@@ -13,7 +13,13 @@ def append_after(filename="", search_string="", new_string=""):
 
     """
 
-    with open(filename, "a") as f:
+    words = ""
+
+    with open(filename, "r") as f:
         for line in f:
+            words += line
             if line.find(search_string) != -1:
-                f.write(new_string)
+                words += new_string
+
+    with open(filename, "w") as w:
+        w.write(words)
