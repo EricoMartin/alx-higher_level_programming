@@ -11,9 +11,14 @@ from models.square import Square
 class TestBase(unittest.TestCase):
     """ Test base class """
 
-    def test_init__(self):
+    def test_no_arg(self):
         base = Base()
-        base_one = Base(1)
+        base_one = Base()
+        self.assertEqual(base.id, base_one.id - 1)
+
+    def test_init(self):
+        base = Base()
+        base_one = Base()
         self.assertEqual(base.id, base_one.id)
 
     def test_multiple(self):
@@ -22,6 +27,11 @@ class TestBase(unittest.TestCase):
         base3 = Base()
         base4 = Base()
         self.assertEqual(base1.id, base2.id - 3)
+    
+    def test_None_id(self):
+        b1 = Base(None)
+        b2 = Base(None)
+        self.assertEqual(b1.id, b2.id - 1)
 
     def test_id(self):
         self.assertEqual(1, Base(1).id)
@@ -29,6 +39,18 @@ class TestBase(unittest.TestCase):
     def test_nb_instances_private(self):
         with self.assertRaises(AttributeError):
             print(Base(12).__nb_instances)
+
+     def test_float_id(self):
+        self.assertEqual(5.5, Base(5.5).id)
+
+    def test_complex_id(self):
+        self.assertEqual(complex(5), Base(complex(5)).id)
+
+    def test_dict_id(self):
+        self.assertEqual({"a": 1, "b": 2}, Base({"a": 1, "b": 2}).id)
+
+    def test_bool_id(self):
+        self.assertEqual(True, Base(True).id)
 
     def test_base_id(self):
         b1 = base(5)
