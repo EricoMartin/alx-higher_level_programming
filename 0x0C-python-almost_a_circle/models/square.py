@@ -7,7 +7,14 @@ class Square(Rectangle):
     """ Square class declaration """
 
     def __init__(self, size, x=0, y=0, id=None):
-        """ construcor initialization """
+        """ construcor initialization
+
+            Args:
+                size (int): The size of the new Square.
+                x (int): The x coordinate of the new Square.
+                y (int): The y coordinate of the new Square.
+                id (int): The identity of the new Square.
+        """
 
         super().__init__(size, size, x, y, id)
 
@@ -17,11 +24,13 @@ class Square(Rectangle):
         return self.width
 
     @size.setter
+    """ setter declaration """
     def size(self, value):
         self.width = value
         self.height = value
 
     def __str__(self):
+        """ string representation function """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
                                                          self.y, self.size)
 

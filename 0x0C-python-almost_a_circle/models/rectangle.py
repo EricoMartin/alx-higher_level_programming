@@ -38,6 +38,7 @@ class Rectangle(Base):
                                                        self.width, self.height)
 
     def update(self, *args, **kwargs):
+        """ update function declaration """
         if args and len(args) != 0:
             a = 0
             for arg in args:
@@ -74,10 +75,12 @@ class Rectangle(Base):
 
     @property
     def width(self):
+        """ width getter function declaration """
         return self.__width
 
     @width.setter
     def width(self, value):
+        """ width setter declaration """
         if type(value) is not int:
             raise TypeError("width must be an integer")
         if value <= 0:
@@ -86,10 +89,12 @@ class Rectangle(Base):
 
     @property
     def height(self):
+        """ height getter function declaration """
         return self.__height
 
     @height.setter
     def height(self, value):
+         """ height setter declaration """
         if type(value) is not int:
             raise TypeError("height must be an integer")
         if value <= 0:
@@ -98,10 +103,12 @@ class Rectangle(Base):
 
     @property
     def x(self):
+        """ x getter function declaration """
         return self.__x
 
     @x.setter
     def x(self, value):
+         """ x setter function declaration """
         if type(value) is not int:
             raise TypeError("x must be an integer")
         if value < 0:
@@ -110,10 +117,12 @@ class Rectangle(Base):
 
     @property
     def y(self):
+         """ y getter function declaration """
         return self.__y
 
     @y.setter
     def y(self, value):
+         """ y setter function declaration """
         if type(value) is not int:
             raise TypeError("y must be an integer")
         if value < 0:
