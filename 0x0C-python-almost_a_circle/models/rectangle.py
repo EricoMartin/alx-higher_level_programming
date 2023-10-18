@@ -7,7 +7,22 @@ class Rectangle(Base):
     """ Rectangle class """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Rectangle constructor declaration """
+        """ Rectangle constructor declaration 
+
+            Args:
+                width (int): width of the current rectangle instance.
+                height (int): height of the current rectangle instance.
+                x (int): x coordinate of the current rectangle instance.
+                y (int): y coordinate of the current rectangle instance.
+                id (int): id of the current rectangle instance.
+
+
+            Raises:
+                TypeError: If either of width or height is not an int.
+                TypeError: If either of x or y is not an int.
+                ValueError: If either of width or height <= 0.
+                ValueError: If either of x or y < 0.
+        """
 
         super().__init__(id)
         self.width = width
@@ -38,7 +53,12 @@ class Rectangle(Base):
                                                        self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """ update function declaration """
+        """ update function declaration 
+            
+            Args:
+                *args: variable arguments
+                **kwargs: keyworded variable arguments
+        """
         if args and len(args) != 0:
             a = 0
             for arg in args:

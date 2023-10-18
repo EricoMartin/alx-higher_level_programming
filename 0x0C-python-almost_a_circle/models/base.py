@@ -5,13 +5,20 @@ import csv
 import turtle
 
 class Base:
-    """ base class declaration """
+    """ base class declaration 
+
+        Private Class Attributes:
+        __nb_object (int): number of object instances.
+    """
 
     __nb_objects = 0
 
     def __init__(self, id=None):
         """
             Constructor declaration
+
+            Args: 
+                id (int): the id of current instance
         """
         if id is not None:
             self.id = id
