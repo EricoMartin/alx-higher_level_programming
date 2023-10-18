@@ -32,10 +32,10 @@ class Square(Rectangle):
     def __str__(self):
         """ string representation function """
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x,
-                                                         self.y, self.size)
+                                                 self.y, self.size)
 
     def update(self, *args, **kwargs):
-        """ update function 
+        """ update function
 
             Args:
                 *args (ints): New attribute values.
@@ -82,4 +82,5 @@ class Square(Rectangle):
             "id": self.id,
             "size": self.size,
             "x": self.x,
-            "y": self.y }
+            "y": self.y
+            }

@@ -7,7 +7,7 @@ class Rectangle(Base):
     """ Rectangle class """
 
     def __init__(self, width, height, x=0, y=0, id=None):
-        """ Rectangle constructor declaration 
+        """ Rectangle constructor declaration
 
             Args:
                 width (int): width of the current rectangle instance.
@@ -53,8 +53,8 @@ class Rectangle(Base):
                                                        self.width, self.height)
 
     def update(self, *args, **kwargs):
-        """ update function declaration 
-            
+        """ update function declaration
+
             Args:
                 *args: variable arguments
                 **kwargs: keyworded variable arguments
@@ -158,4 +158,3 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
-

@@ -4,8 +4,9 @@ import json
 import csv
 import turtle
 
+
 class Base:
-    """ base class declaration 
+    """ base class declaration
 
         Private Class Attributes:
         __nb_object (int): number of object instances.
@@ -17,7 +18,7 @@ class Base:
         """
             Constructor declaration
 
-            Args: 
+            Args:
                 id (int): the id of current instance
         """
         if id is not None:
