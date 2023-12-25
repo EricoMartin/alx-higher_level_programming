@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-''' The module declaration for a mysql connection.'''
+""" The module declaration for a mysql connection."""
 
 import MySQLdb
 
