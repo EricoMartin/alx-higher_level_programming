@@ -14,7 +14,7 @@ if __name__ = "__main__":
 
     cursor = connection.cursor()
     cursor.execute("SELECT * FROM states
-                   WHERE LEFT(name, 1)='N' ORDER BY id ASC")
+                   WHERE name LIKE 'N%' ORDER BY id ASC")
 
     rows = cursor.fetchall()
     for row in rows:
